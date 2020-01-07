@@ -8,8 +8,8 @@ html {
 body {
   background-image: linear-gradient(
     to bottom,
-    rgba(0, 204, 255, 0.397),
-    rgba(136, 247, 85, 0.253)
+    rgba(255, 0, 179, 0.678),
+    rgba(6, 231, 62, 0.788)
   );
   background-size: cover;
 }
@@ -31,35 +31,89 @@ body {
   width: 12rem;
   transition: all 0.5s;
   outline-offset: 0.5rem;
+  transform: scale(1.1);
 }
 
 .building {
-  top: 5rem;
+  top: 14rem;
   left: 48rem;
 }
  
 .mountain {
   margin:auto;
-  top: 10rem;
+  top: 14rem;
   left: 24rem;
 }
  
 .rainforest {
-  top: 15rem;
+  top: 14rem;
   left: 0rem;
 }
  
 .river {
-  top: 35rem;
+  top: 47rem;
   left: 48rem;
 }
  
 .road {
-  top: 40rem;
+  top: 47rem;
   left: 24rem;
 }
  
 .stars {
-  top: 45rem;
+  top: 47rem;
   left: 0rem;
+}
+
+.background:hover {
+  transform: scale(1.5);
+  outline: 0.05rem dotted #222;
+  z-index: 2;
+}
+
+.building:hover{
+  transform: scale(1.7);
+  transition: .7s ease-in-out;
+}
+
+.mountain:hover{
+	transform: rotate(30deg) scale(1.4);
+  transition: .3s ease-in-out;
+}
+
+.rainforest:hover{
+	opacity: 1;
+	animation: flash 1.9s;
+}
+
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.river:hover{
+	filter: sepia(50%);
+	transition: .6s ease-in-out;
+}
+
+.road:hover{
+	opacity: .8;
+	transition: .7s ease-in-out;
+}
+
+.stars:hover{
+	filter: grayscale(50%);
+	transition: .7s ease-in-out;
 }
