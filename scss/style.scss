@@ -72,7 +72,7 @@ body {
 }
 
 .building:hover{
-  transform: scale(1.7);
+  transform: scale(2.0);
   transition: .7s ease-in-out;
 }
 
@@ -116,4 +116,24 @@ body {
 .stars:hover{
 	filter: grayscale(50%);
 	transition: .7s ease-in-out;
+}
+
+.rainforest:hover{
+	transform: rotate(30deg) scale(1.4);
+  transition: .3s ease-in-out;
+}
+
+.river:hover{
+	transform: rotate(30deg) scale(1.4);
+  transition: .3s ease-in-out;
+}
+
+.stars:hover{
+	transform: rotate(30deg) scale(1.4);
+  transition: .3s ease-in-out;
+}
+
+.road:hover{
+	transform: rotate(30deg) scale(1.4);
+  transition: .3s ease-in-out;
 }

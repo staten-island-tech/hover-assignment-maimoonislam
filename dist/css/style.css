@@ -75,8 +75,8 @@ body {
 }
 
 .building:hover {
-  -webkit-transform: scale(1.7);
-          transform: scale(1.7);
+  -webkit-transform: scale(2);
+          transform: scale(2);
   -webkit-transition: .7s ease-in-out;
   transition: .7s ease-in-out;
 }
@@ -130,5 +130,33 @@ body {
           filter: grayscale(50%);
   -webkit-transition: .7s ease-in-out;
   transition: .7s ease-in-out;
+}
+
+.rainforest:hover {
+  -webkit-transform: rotate(30deg) scale(1.4);
+          transform: rotate(30deg) scale(1.4);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.river:hover {
+  -webkit-transform: rotate(30deg) scale(1.4);
+          transform: rotate(30deg) scale(1.4);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.stars:hover {
+  -webkit-transform: rotate(30deg) scale(1.4);
+          transform: rotate(30deg) scale(1.4);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.road:hover {
+  -webkit-transform: rotate(30deg) scale(1.4);
+          transform: rotate(30deg) scale(1.4);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 /*# sourceMappingURL=style.css.map */
