@@ -7,9 +7,12 @@ html {
 }
 
 body {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(white));
-  background-image: linear-gradient(to bottom, black, white);
-  background-size: cover;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(red), to(#2600ff));
+  background-image: linear-gradient(to bottom, red, #2600ff);
+  -webkit-animation-name: colorchange;
+          animation-name: colorchange;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
 }
 
 .gallery {
@@ -37,33 +40,33 @@ body {
 }
 
 .building {
-  top: 14rem;
-  left: 48rem;
+  top: 36rem;
+  left: 23.5rem;
 }
 
 .mountain {
   margin: auto;
-  top: 14rem;
-  left: 24rem;
+  top: 6rem;
+  left: 42rem;
 }
 
 .rainforest {
-  top: 14rem;
-  left: 0rem;
+  top: 6rem;
+  left: 9rem;
 }
 
 .river {
-  top: 47rem;
-  left: 48rem;
+  top: 46rem;
+  left: 51rem;
 }
 
 .road {
-  top: 47rem;
-  left: 24rem;
+  top: 67rem;
+  left: 23.5rem;
 }
 
 .stars {
-  top: 47rem;
+  top: 46rem;
   left: 0rem;
 }
 
@@ -103,15 +106,14 @@ body {
   }
 }
 
-@keyframes flash {
-  0% {
-    opacity: .4;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
+/*@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}*/
 .river:hover {
   -webkit-filter: sepia(50%);
           filter: sepia(50%);
@@ -158,5 +160,27 @@ body {
           transform: rotate(30deg) scale(1.4);
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
+}
+
+@-webkit-keyframes colorchange {
+  from {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#48ff00), to(#00ffd5));
+    background-image: linear-gradient(to bottom, #48ff00, #00ffd5);
+  }
+  to {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(red), to(#2600ff));
+    background-image: linear-gradient(to bottom, red, #2600ff);
+  }
+}
+
+@keyframes colorchange {
+  from {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#48ff00), to(#00ffd5));
+    background-image: linear-gradient(to bottom, #48ff00, #00ffd5);
+  }
+  to {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(red), to(#2600ff));
+    background-image: linear-gradient(to bottom, red, #2600ff);
+  }
 }
 /*# sourceMappingURL=style.css.map */

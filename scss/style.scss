@@ -8,10 +8,11 @@ html {
 body {
   background-image: linear-gradient(
     to bottom,
-    rgb(0, 0, 0),
-    rgb(255, 255, 255)
+    rgb(255, 0, 0),
+    rgb(38, 0, 255)
   );
-  background-size: cover;
+  animation-name: colorchange;
+  animation-duration:3s;
 }
 
 .gallery {
@@ -35,33 +36,33 @@ body {
 }
 
 .building {
-  top: 14rem;
-  left: 48rem;
+  top: 36rem;
+  left: 23.5rem;
 }
  
 .mountain {
   margin:auto;
-  top: 14rem;
-  left: 24rem;
+  top: 6rem;
+  left: 42rem;
 }
  
 .rainforest {
-  top: 14rem;
-  left: 0rem;
+  top: 6rem;
+  left: 9rem;
 }
  
 .river {
-  top: 47rem;
-  left: 48rem;
+  top: 46rem;
+  left: 51rem;
 }
  
 .road {
-  top: 47rem;
-  left: 24rem;
+  top: 67rem;
+  left: 23.5rem;
 }
  
 .stars {
-  top: 47rem;
+  top: 46rem;
   left: 0rem;
 }
 
@@ -94,14 +95,14 @@ body {
 		opacity: 1;
 	}
 }
-@keyframes flash {
+/*@keyframes flash {
 	0% {
 		opacity: .4;
 	}
 	100% {
 		opacity: 1;
 	}
-}
+}*/
 
 .river:hover{
 	filter: sepia(50%);
@@ -139,3 +140,14 @@ body {
 }
 
 @keyframes colorchange{
+  from{background-image: linear-gradient(
+    to bottom,
+    rgb(72, 255, 0),
+    rgb(0, 255, 213)
+  );}
+  to{background-image: linear-gradient(
+    to bottom,
+    rgb(255, 0, 0),
+    rgb(38, 0, 255)
+  );}
+}
