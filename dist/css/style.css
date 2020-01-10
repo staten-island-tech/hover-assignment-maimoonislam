@@ -9,10 +9,13 @@ html {
 body {
   background-image: -webkit-gradient(linear, left top, left bottom, from(red), to(#2600ff));
   background-image: linear-gradient(to bottom, red, #2600ff);
+  background-size: cover;
   -webkit-animation-name: colorchange;
           animation-name: colorchange;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
 }
 
 .gallery {
@@ -128,8 +131,8 @@ body {
 }
 
 .stars:hover {
-  -webkit-filter: grayscale(50%);
-          filter: grayscale(50%);
+  -webkit-filter: grayscale(90%);
+          filter: grayscale(90%);
   -webkit-transition: .7s ease-in-out;
   transition: .7s ease-in-out;
 }
@@ -163,22 +166,46 @@ body {
 }
 
 @-webkit-keyframes colorchange {
-  from {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#48ff00), to(#00ffd5));
-    background-image: linear-gradient(to bottom, #48ff00, #00ffd5);
+  0% {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(red), to(#2600ff));
+    background-image: linear-gradient(to bottom, red, #2600ff);
   }
-  to {
+  25% {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#00ff0d), to(cyan));
+    background-image: linear-gradient(to bottom, #00ff0d, cyan);
+  }
+  50% {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fffb00), to(#ff6600));
+    background-image: linear-gradient(to bottom, #fffb00, #ff6600);
+  }
+  75% {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ff2cd1), to(#2f0144));
+    background-image: linear-gradient(to bottom, #ff2cd1, #2f0144);
+  }
+  100% {
     background-image: -webkit-gradient(linear, left top, left bottom, from(red), to(#2600ff));
     background-image: linear-gradient(to bottom, red, #2600ff);
   }
 }
 
 @keyframes colorchange {
-  from {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#48ff00), to(#00ffd5));
-    background-image: linear-gradient(to bottom, #48ff00, #00ffd5);
+  0% {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(red), to(#2600ff));
+    background-image: linear-gradient(to bottom, red, #2600ff);
   }
-  to {
+  25% {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#00ff0d), to(cyan));
+    background-image: linear-gradient(to bottom, #00ff0d, cyan);
+  }
+  50% {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fffb00), to(#ff6600));
+    background-image: linear-gradient(to bottom, #fffb00, #ff6600);
+  }
+  75% {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ff2cd1), to(#2f0144));
+    background-image: linear-gradient(to bottom, #ff2cd1, #2f0144);
+  }
+  100% {
     background-image: -webkit-gradient(linear, left top, left bottom, from(red), to(#2600ff));
     background-image: linear-gradient(to bottom, red, #2600ff);
   }
